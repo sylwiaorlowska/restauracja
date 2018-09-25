@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="pl">
+<title>MENU1</title>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,100,300,500,700,900&amp;subset=latin-ext">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh"
+        crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="fancybox/source/jquery.fancybox.css?v=2.1.7" type="text/css" media="screen" />
+    <script type="text/javascript" src="fancybox/source/jquery.fancybox.pack.js?v=2.1.7"></script>
+
+    <link rel="stylesheet" type="text/css" href="blog.css">
+
+    <style>
+        html {
+            height: 100%;
+        }
+
+        body {
+            margin: 0;
+            font-family: Roboto, sans-serif;
+            height: 100%;
+
+        }
+
+        #header {
+            background-color: #1968B9;
+            padding: 10px 50px;
+        }
+
+        #logo {
+            font-weight: 700;
+            color: #000;
+            margin: 0;
+            font-size: 34px;
+        }
+
+        #header nav {
+            float: right;
+            margin-right: -20px;
+        }
+
+        #header nav a {
+            display: inline-block;
+            padding: 10px 20px;
+            font-size: 16px;
+            color: #fff;
+            text-decoration: none;
+        }
+
+        #footer {
+            background-color: #46494F;
+            color: #fff;
+            padding: 25px 50px;
+            font-size: 14px;
+            text-align: center;
+        }
+
+        section.image {
+            height: 800px;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            background-attachment: fixed;
+        }
+
+        section.text {
+            max-width: 1170px;
+            padding: 20px;
+            padding: 20px 0;
+            position: relative;
+        }
+
+        section.text .icon {
+            position: absolute;
+            left: 0;
+            top: 0;
+            right: 50%;
+            bottom: 0;
+        }
+
+        section.text.left .icon {
+            right: 0;
+            left: 50%;
+        }
+
+        section.text .icon .fa {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 200px;
+        }
+
+        section.text .content {
+            margin-left: 50%;
+        }
+
+        section.text.left .content {
+            margin-left: 0;
+            margin-right: 50%;
+        }
+
+        section.text h2 {
+            font-size: 36px;
+            font-weight: normal;
+        }
+
+        .sidenav {
+            height: 100%;
+            width: 0;
+            position: fixed;
+            z-index: 1;
+            top: 0;
+            left: 0;
+            background-color: #111;
+            overflow-x: hidden;
+            transition: 0.5s;
+            padding-top: 60px;
+        }
+
+        .sidenav a {
+            padding: 8px 8px 8px 32px;
+            text-decoration: none;
+            font-size: 25px;
+            color: #818181;
+            display: block;
+            transition: 0.3s;
+        }
+
+        .sidenav a:hover {
+            color: #f1f1f1;
+        }
+
+        .sidenav .closebtn {
+            position: absolute;
+            top: 0;
+            right: 25px;
+            font-size: 36px;
+            margin-left: 50px;
+        }
+
+        #main {
+            transition: margin-left .5s;
+            padding: 16px;
+        }
+
+        @media screen and (max-height: 450px) {
+            .sidenav {
+                padding-top: 15px;
+            }
+
+            .sidenav a {
+                font-size: 18px;
+            }
+        }
+
+        section.text .icon .fa {
+            font-size: 15vw;
+        }
+
+            .center-text {
+      text-align: center;
+    }
+
+    </style>
+</head>
+
+<body>
+    <script>
+        function openNav() {
+            document.getElementById("mySidenav").style.width = "250px";
+            document.getElementById("main").style.marginLeft = "250px";
+        }
+
+        function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+            document.getElementById("main").style.marginLeft = "0";
+
+        }
+        $(document).ready(function () {
+            $(".fancybox-button").fancybox({
+                prevEffect: 'none',
+                nextEffect: 'none',
+                closeBtn: false,
+                helpers: {
+                    title: { type: 'inside' },
+                    buttons: {}
+                }
+            });
+        });
+
+
+    </script>
+
+    <section class="image" style="background-image: url('images1/20a.jpg');">
+
+    </section>
+
+    <section class="text">
+        <div class="container">
+
+            <div class="icon">
+                <span class="fa fa-cutlery"></span>
+            </div>
+
+            <div class="content center-text">
+                    <p>HEALTHY FOOD
+                </p>
+                W naszej restauracji podajemy wiele rodzajów sałatek.Stawiamy na jakość naszych produktów dlatego
+                czesto kupujemy je w małych gospodarstwach ekologicznych.
+                <center> <br>KAŻDY ZNAJDZIE COŚ DLA SIEBIE</center>
+                <br>
+                Do naszego menu dobieramy sałatki tak aby każdy klient mógł wybrać coś dla siebie.Dbamy aby były zdrowe
+                i zawierały wiele witamy.Dlatego nasze sałatkowe menu układamy
+                również mając na uwadze pory roku.
+
+            </div>
+        </div>
+    </section>
+
+    <section class="image" style="background-image: url('images1/18a.jpg');"></section>
+
+
+
+    <section class="text">
+        <div class="container">
+            <div class="icon">
+                <span class="fa fa-glass"></span>
+            </div>
+            <div class="content center-text">
+                    <p>ALKOHOLE
+                </p>
+
+                W naszej restauracji znajdziecie Państwo szeroki wybór alkoholi.Staramy się, aby pasowały one do
+                podawnaych przez nas dań oraz do poniebień naszych klientów.
+                <br>
+                <center> <br>KAŻDY ZNAJDZIE COŚ DLA SIEBIE</center>
+                Począwszy od aperitifów, aromatycznych korzenno -
+                ziołowych wódek o leczniczych i relaksacyjnych właściwościach, poprzez wódki wysokogatunkowych i
+                trzykrotnie destylowane alkohole o niezwykłej łagodności, pochodzące z najróżniejszych zakątków świata.
+                Smakosze o lekkim podniebieniu znajdą tutaj swój świat likierów i rumów, podawanych w tradycyjny
+                sposób, a panie zachwycą się rozmaitością lekkich koktajli, przystrojonych niezwykłą dekoracją.
+                Polecamy szeroką gamę win z całego świata, począwszy od słodkich orzeźwiających, poprzez wytrawne pełne
+                smaku.
+
+            </div>
+        </div>
+
+    </section>
+
+
+
+    <br>
+
+    </section>
+
+    <section class="image" style="background-image: url('images1/17b.jpg');"></section>
+
+    <section class="text">
+        <div class="container">
+            <div class="icon">
+                <span class="fa fa-birthday-cake"></span>
+            </div>
+            <div class="content center-text">
+                    <p>WYPIEKI
+                </p>
+
+
+                W naszej restauracji wszystkie ciasta, torty, ciasteczka i inne słodkości wypiekane są we własnym
+                zakresie na miejscu. Sprawdzone przepisy, tradycyjne receptury oraz
+                nacisk na naturalne składniki wypiekanych przez nas wypieków powodują, że nasze ciasta smakują jak u
+                mamy.
+
+                Możemy zaoferować Państwu bardzo szeroki wybór ciast, ciasteczek oraz tortów.
+                <br>
+                <center> <br>KAŻDY ZNAJDZIE COŚ DLA SIEBIE</center>
+                Wspaniałe torty i ciasta od wielu lat cieszą się niesłabnącym powodzeniem
+                wśród naszcy gość. Przytulna kawiarnia sprzyja delektowaniu się słodkościami przy filiżance wyśmienitej
+                kawy.
+            </div>
+        </div>
+    </section>
+
+    <section class="image" style="background-image: url('images1/21b.jpg');"></section>
+
+    <section class="text">
+        <div class="container">
+            <div class="icon">
+                <span class="fa fa-coffee"></span>
+            </div>
+            <div class="content">
+                <p>KAWY i HERBATY</p>
+                Nasza restauracjia potrafi sprostać nawet najbardziej wymagającym klientom, gdyż oferujemy game
+                różnorakich herbat i kaw.
+                Kawy przygotowywane sa na bazie legendarnych mieszanek ziaren, które trafią do serc miłośnika klasyki.
+                Umiejętności naszych baristów uwydatniają wyjątkowe doznania związane z każda filiżanka naszej
+                najwyższej jakości kawy.<br>
+                <br>
+                Nie samą kawą człowiek żyje, dlatego jeśli nie masz ochoty na mocną dawkę kofeiny przygotujemy dla
+                Ciebie
+                starannie wyselekcjonowany zestaw herbat liściastych pochodzących z całego świata.
+            </div>
+        </div>
+    </section>
+
+
+    <section class="image" style="background-image: url('images1/16a.jpg');"></section>
+
+    <section class="text">
+        <div class="container">
+            <div class="icon">
+                <span class="fa fa-cutlery"></span>
+            </div>
+            <div class="content center-text">
+                    <p>DANIA GŁÓWNE
+                </p>
+
+
+                W menu naszej restauracji znajdziecie Państwo dania kuchni polskiej i regionalnej.
+                Szef Kuchni osobiście czuwa nad przygotowaniem potraw, korzystając ze starannie wyselekcjonowanych
+                dostawców,
+                w swojej kuchni wykorzystując składniki lokalne i sezonowe.
+                <br>
+                <center> <br>KAŻDY ZNAJDZIE COŚ DLA SIEBIE</center>
+                Nasi kucharze zadbają o każdego gościa, aby każdy wszyedł zadowolony i z pełnym żołądkiem.
+                Mamy również specjana oferte dla wegetarian.
+            </div>
+        </div>
+    </section>
+    <footer id="footer">
+
+    </footer>
+
+</body>
+
+</html>
